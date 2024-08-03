@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="demo.css" rel="stylesheet">
+    <link href="mode.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="main.html"><img src="photos and logos/syslogo.jpg" alt="City Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="About_us.html">About us </a></li>
+                <li><a href="services.html">About Services</a></li>
+                <li><a href="#">Our Work</a></li>
+            </ul>
+        </nav>
+
+        <a href="demo.html"><button id="demobutton">Request a demo</button></a>
+    </header>
+
+    <div class="container">
+        
+        <div class="form-container">
+            <form>
+                <h2>Have Questions? Contact Us!</h2>
+                
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="Phone">Phone no:</label>
+                <input type="tel" id="mobie" name="phone" required>
+
+                <lable for="mailid">Email id:</lable>
+                <input type="email" id="mailid" name="mail-id" required >
+
+                <lable for="title">Title :</lable>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message" required></textarea>
+                
+                
+                <button id="submit_btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="images-container">
+            <div class="image-layer">
+                <img class ="image1" src="photos and logos/demo 1.jpeg" alt="Image 1">
+                <img  class="image2" src="photos and logos/demo 2.jpeg" alt="Image 2">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="photos and logos/syslogo.jpg" alt="SysAssist Logo">
+            </div>
+            <div class="footer-contact">
+                <p><strong>Email:<br><br></strong>
+                    inquiry@sysassist.co<br>
+                    sales@sysassist.co<br>
+                    support@sysassist.co</p><br>
+                <p style="padding-bottom: 10px;"><strong>Phone:</strong> +91-9987986053</p>
+            </div>
+            <div class="footer-social">
+
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Instagram</a>
+                <br><br>
+                <h6>
+                    <Address style="margin-right: 20px;">Address:<br>
+                        739, Sai Kripa Colony,
+                        Sri Sai Kripa Main Road 2<br>
+                        Indore, Madhya Pradesh, India
+                        PIN - 452010
+                        <br>
+                    </Address>
+                </h6>
+            </div>
+        </div>
+    </footer>
+<script >
+    const submitbtn = document.querySelector("#submit_btn");
+    submitbtn.addEventListener("click", () => {
+    alert("we will Contact you soon");
+});
+</script>
+
+</body>
+</html>
